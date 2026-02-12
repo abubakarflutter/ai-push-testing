@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pub.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl:*)",
+      "Bash(flutter pub get:*)",
+      "Bash(dart pub global activate:*)",
+      "Bash(\"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Pub\\\\Cache\\\\bin\\\\dart_eval\" compile -o air_push_update.evc)",
+      "Bash(\"$LOCALAPPDATA/Pub/Cache/bin/dart_eval.bat\" compile -o air_push_update.evc)",
+      "Bash(flutter analyze:*)"
+    ]
+  }
+}
