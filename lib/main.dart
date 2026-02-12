@@ -13,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HotSwapLoader(
-      // Load .evc from local asset (for testing).
-      // Replace with your GitHub raw URL after pushing:
-      // e.g. 'https://raw.githubusercontent.com/<user>/air_push/main/assets/air_push_update.evc'
-      uri: 'asset://assets/air_push_update.evc',
+      uri: 'https://raw.githubusercontent.com/abubakarflutter/ai-push-testing/main/assets/air_push_update.evc',
       strategy: HotSwapStrategy.immediate,
+      onError: (error, stackTrace) {
+        debugPrint('HotSwapLoader error: $error');
+        return const SizedBox.shrink();
+      },
       child: MaterialApp(
         title: 'Air Push',
         theme: ThemeData(

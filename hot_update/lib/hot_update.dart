@@ -14,12 +14,12 @@ Widget airPushScaffoldUpdate(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Text(
-            'Counter value (updated via air push):',
+            'Counter New value (updated via air push):',
           ),
           Text(
             '$counter',
             style: const TextStyle(
-              fontSize: 36,
+              fontSize: 96,
               fontWeight: FontWeight.bold,
               color: Colors.indigo,
             ),
