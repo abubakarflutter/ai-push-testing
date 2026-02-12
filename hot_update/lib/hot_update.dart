@@ -32,7 +32,7 @@ Widget airPushScaffoldUpdate(
         increment();
       },
       backgroundColor: Colors.indigo,
-      child: const Icon(Icons.add),
+      child: const Icon(Icons.add, color: Colors.white,),
     ),
   );
 }

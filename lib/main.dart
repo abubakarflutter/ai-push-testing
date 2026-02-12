@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HotSwapLoader(
-      uri: 'https://raw.githubusercontent.com/abubakarflutter/ai-push-testing/main/assets/air_push_update.evc',
+      uri: 'https://github.com/abubakarflutter/ai-push-testing/raw/refs/heads/master/assets/air_push_update.evc',
+      // uri: 'https://raw.githubusercontent.com/abubakarflutter/ai-push-testing/main/assets/air_push_update.evc',
       strategy: HotSwapStrategy.immediate,
       onError: (error, stackTrace) {
         debugPrint('HotSwapLoader error: $error');
